@@ -1,0 +1,50 @@
+﻿@model PredictionModel
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="row">
+   
+    <div class="col-lg-6 offset-3">
+        <h2 class="text-center">Satış Tahmini</h2>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form asp-controller="Home" asp-action="Index" method="post">
+            <div class="form-group">
+                <label class="form-label">TV</label>
+                <input type="number" step="0.01" asp-for="TV" class="form-control"  />
+            </div>
+            <span asp-validation-for="TV" class="text-danger mt-1"></span>
+            <div class="form-group mt-3">
+                <label class="form-label">Radyo</label>
+                <input type="number" step="0.01" asp-for="Radio" class="form-control" />
+            </div>
+            <span asp-validation-for="Radio" class="text-danger mt-1"></span>
+
+            <div class="form-group mt-3">
+                <label class="form-label">Gazete</label>
+                <input type="number" step="0.01" asp-for="Newspaper" class="form-control" />
+            </div>
+            <span asp-validation-for="Newspaper" class="text-danger mt-1"></span>
+
+            <div class="form-group mt-3">
+                <button type="submit" class="btn btn-primary">Tahmin</button>
+            </div>
+           
+
+        </form>
+
+
+        @if (ViewBag.Prediction != null)
+        {
+            <div class="mt-3">
+                <h4>Tahmin Sonucu:</h4>
+                <p>Tahmini Satış: @ViewBag.Prediction</p>
+            </div>
+        }
+
+    </div>
+</div>
+
+
+
+

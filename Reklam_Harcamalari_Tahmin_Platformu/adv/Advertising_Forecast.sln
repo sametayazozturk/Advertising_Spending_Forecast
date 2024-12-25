@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advertising_Forecast", "Advertising_Forecast\Advertising_Forecast.csproj", "{FF8D159E-74E3-4B28-8F2C-7328A8A2AE9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{1E4889D7-24AC-4DE0-99C7-96CCC419BF21}"
+	ProjectSection(SolutionItems) = preProject
+		Api\advertising.csv = Api\advertising.csv
+		Api\analysis.py = Api\analysis.py
+		Api\api.py = Api\api.py
+		Api\model.pkl = Api\model.pkl
+		Api\model.py = Api\model.py
+		Api\requirements.txt = Api\requirements.txt
+		Api\train_model.py = Api\train_model.py
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF8D159E-74E3-4B28-8F2C-7328A8A2AE9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8D159E-74E3-4B28-8F2C-7328A8A2AE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8D159E-74E3-4B28-8F2C-7328A8A2AE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8D159E-74E3-4B28-8F2C-7328A8A2AE9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E48AC53-C8FF-4387-A5DE-0FAA802EE178}
+	EndGlobalSection
+EndGlobal
